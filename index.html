@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Car Gallery</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<header>
+  <nav class="navbar">
+    <div class="logo">Car Gallery</div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Benz</a></li>
+      <li><a href="#">Van</a></li>
+      <li><a href="#">Sports</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+    <div class="menu-toggle" id="menuToggle">&#9776;</div>
+  </nav>
+  <div class="header-img">
+    <img src="benz1.png" alt="Car Gallery" />
+    <div class="header-text">
+      <h1>Welcome to Car Gallery</h1>
+      <p>Your one-stop destination for car enthusiasts.</p>
+    </div>
+  </div>  
+</header>
+<section class="gallery">
+    <h2>Benz Collection</h2>
+    <div class="gallery-grid">
+      <img src="benz2.png" alt="Benz 1" />
+      <img src="benz1.png" alt="Benz 2" />
+      <img src="benz3.png" alt="Benz 3" />
+      <img src="benz4.png" alt="Benz 4" />
+    </div>
+  </section>
+<section class="gallery">
+    <h2>Van Collection</h2>
+    <div class="gallery-grid">
+      <img src="van2.jpg" alt="Van 1" />
+      <img src="van1.jpg" alt="Van 2" />
+      <img src="van3.jpg" alt="Van 3" />
+      <img src="van4.jpg" alt="Van 4" />
+    </div>
+  </section>
+<section class="gallery">
+    <h2>Sports Collection</h2>
+    <div class="gallery-grid">
+      <img src="sport1.jpg" alt="Sports 1" />
+      <img src="storts2.jpg" alt="Sports 2" />
+      <img src="sports3.jpg" alt="Sports 3" />
+      <img src="sports4.jpg" alt="Sports 4" />
+    </div>
+  </section>  
+
+  <section class="contact-section">
+    <div class="contact-container">
+      
+        <!-- About Us -->
+      <div class="about-info">
+        <h2>About Us</h2>
+        <p>
+          Welcome to Car Gallery, your go-to destination for stunning car collections,
+          passionate auto-lovers, and everything cars! We're dedicated to curating the finest vehicles for enthusiasts around the world.
+        </p>
+        <p>
+          Reach out to us for inquiries, collaborations, or just to say hi!
+        </p>
+      </div>
+  
+      <!-- Contact Form -->
+      <div class="contact-form">
+        <h2>Contact Us</h2>
+        <form>
+          <input type="text" placeholder="Your Name" required />
+          <input type="email" placeholder="Your Email" required />
+          <textarea placeholder="Your Message" required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+  
+      
+    </div>
+  </section>
+  
+  <footer class="footer">
+    <div class="footer-bottom">
+      <p>&copy; 2025 Car Gallery. All rights reserved.</p>
+    </div>
+  </footer>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- ✅ Move the script here, after HTML elements are loaded -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const menuToggle = document.getElementById('menuToggle');
+      const navLinks = document.getElementById('navLinks');
+
+      menuToggle.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+      });
+    });
+  </script>
+
+</body>
+</html>

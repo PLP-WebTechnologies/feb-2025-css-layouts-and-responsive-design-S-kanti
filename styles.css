@@ -1,0 +1,258 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .navbar {
+    background-color: #333;
+    padding: 0.5rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .logo {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .nav-links li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .menu-toggle {
+    display: none;
+    font-size: 1.8rem;
+    color: white;
+    cursor: pointer;
+  }
+
+  /* Header Section */
+.header-img {
+    position: relative;
+    width: 100%;
+    height: 90vh;
+    overflow: hidden;
+  }
+  
+  .header-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .header-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.4); 
+    padding: 1rem 2rem;
+    border-radius: 8px;
+  }
+  
+  .header-text h1 {
+    font-size: 2.5rem;
+    margin: 0;
+  }
+  
+  .header-text p {
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+  }
+
+  /* Gallery Section */
+.gallery{
+    padding: 2rem 1rem;
+    text-align: center;
+    background-color: #f9f9f9;
+  }
+  
+  .gallery h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+  
+ 
+  .gallery-grid {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  .gallery-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .gallery-grid img:hover {
+    transform: scale(1.05);
+  }
+
+  /* Contact Section */
+.contact-section {
+    background-color: #f2f2f2;
+    padding: 3rem 1rem;
+  }
+  
+  .contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 2rem;
+  }
+  
+  .contact-form,
+  .about-info {
+    flex: 1 1 400px;
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Form Inputs */
+  .contact-form h2 {
+    margin-bottom: 1rem;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: vertical;
+  }
+  
+  .contact-form button {
+    padding: 0.8rem 1.5rem;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .contact-form button:hover {
+    background-color: #555;
+  }
+  
+  /* About Info */
+  .about-info h2 {
+    margin-bottom: 1rem;
+  }
+  
+  .about-info p {
+    line-height: 1.6;
+  }
+
+  /* Footer Styles */
+.footer {
+    background-color: #222;
+    color: #eee;
+    padding: 10px;
+    font-size: 0.95rem;
+  }
+  
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footer h3, .footer h4 {
+    margin-bottom: 1rem;
+  }
+  
+ 
+  .footer-bottom {
+    text-align: center;
+    margin-top: 10px;
+    border-top: 1px solid #444;
+    padding-top: 10px;
+    font-size: 0.85rem;
+  }
+  /*------------------------------------------------------
+  /* Responsive Footer */
+  @media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: #333;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        padding: 1rem;
+      }
+    
+      .nav-links.active {
+        display: flex;
+      }
+    
+      .menu-toggle {
+        display: block;
+      }
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: #333;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        padding: 1rem;
+      }
+    
+      .nav-links.active {
+        display: flex;
+      }
+    
+      .menu-toggle {
+        display: block;
+      }
+    .footer-container {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    .contact-container {
+        flex-direction: column;
+      }
+  }
+  
+  
+  /* Optional: Responsive padding on smaller screens */
+  @media (max-width: 480px) {
+    .gallery-benz {
+      padding: 1.5rem 0.5rem;
+    }
+  }
+  
+  
+
+  
+
+  
